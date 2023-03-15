@@ -1,0 +1,33 @@
+
+<!-- <p>{{myData | json}}</p> -->
+
+<!-- <ul> -->
+<!-- <li *ngFor = "let item of myData$ | async">
+        {{item.name}}
+    </li> -->
+<!-- <div class="card" *ngFor="let item of myData$ | async"> -->
+<div class="container">
+    <div class="title" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+        <H1 class="border">ASSESSMENT</H1>
+    </div>
+    <div class="button">
+        <button type="button" class="btn btn-success" (click)="sortName()" id="ascending">
+            Sort Ascending
+        </button>
+        <button type="button" class="btn btn-success" (click)="sortName2()" id="descending">
+            Sort Descending
+        </button>
+        <button type="button" class="btn btn-success" (click)="filter()" id="filter">
+            Filter
+        </button>
+    </div>
+    <div class="card" *ngFor="let item of myData2">
+        <div class="card-body">
+            <p>Country Name: {{item.name}}</p>
+            <p>Region: {{item.region}}</p>
+            <p>Area: {{item.area}}</p>
+        </div>
+    </div>
+</div>
+
+<!-- </ul> -->
